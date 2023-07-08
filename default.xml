@@ -2,47 +2,47 @@
 <manifest>
 
   <remote name="github"
-    fetch="https://github.com/{}" />
+    fetch="https://github.com/" />
 
   <remote name="aur"
-    fetch="https://aur.archlinux.org/{}" />
+    fetch="https://aur.archlinux.org/" revision="master" />
 
   <remote name="private"
-    fetch="ssh://git@github.com/{}" />
+    fetch="ssh://git@github.com/" />
 
-  <default remote="github" />
+  <default remote="github" revision="main" />
 
   <!-- Build tools -->
-  <project path="build" name="blend-os/blendos_build"></project>
+  <project path="build" name="blend-os/blendos_build" revision="main"  ></project>
 
   <!-- Projects and their packaging -->
-  <project path="projects/akshara" name="blend-os/akshara"></project>
-  <project path="packages/akshara" name="blend-os/akshara-pkg"></project>
+  <project path="projects/akshara" name="blend-os/akshara" revision="main" ></project>
+  <project path="packages/akshara" name="blend-os/akshara-pkg" revision="main" ></project>
 
-  <project path="projects/blend" name="blend-os/blend"></project>
-  <project path="packages/blend" name="blend-os/blend-pkg"></project>
+  <project path="projects/blend" name="blend-os/blend" revision="main" ></project>
+  <project path="packages/blend" name="blend-os/blend-pkg" revision="main" ></project>
 
-  <project path="projects/blend-web-store" name="blend-os/web-store"></project>
-  <project path="packages/blend-web-store" name="blend-os/blend-web-store-pkg"></project>
+  <project path="projects/blend-web-store" name="blend-os/web-store" revision="main" ></project>
+  <project path="packages/blend-web-store" name="blend-os/blend-web-store-pkg" revision="main" ></project>
 
-  <project path="projects/blendos-first-setup" name="blend-os/blendos-first-setup"></project>
-  <project path="packages/blendos-first-setup" name="blend-os/blendos-first-setup-pkg"></project>
+  <project path="projects/blendos-first-setup" name="blend-os/blendos-first-setup" revision="main" ></project>
+  <project path="packages/blendos-first-setup" name="blend-os/blendos-first-setup-pkg" revision="main" ></project>
 
-  <project path="projects/jade-gui" name="blend-os/jade-gui"></project>
-  <project path="packages/jade-gui" name="blend-os/jade-gui-pkg"></project>
+  <project path="projects/jade-gui" name="blend-os/jade-gui" revision="main" ></project>
+  <project path="packages/jade-gui" name="blend-os/jade-gui-pkg" revision="main" ></project>
 
-  <project path="projects/system" name="blend-os/system"></project>
-  <project path="packages/system" name="blend-os/system-pkg"></project>
+  <project path="projects/system" name="blend-os/system" revision="main" ></project>
+  <project path="packages/system" name="blend-os/system-pkg" revision="main" ></project>
 
   <!-- Independent packages -->
-  <project path="packages/blend-inst" name="blend-os/blend-inst"></project>
-  <project path="packages/blend-keyring" name="blend-os/blend-keyring-pkg"></project>
-  <project path="packages/filesystem-blend" name="blend-os/filesystem-blend"></project>
-  <project path="packages/grub-blend" name="blend-os/grub-blend-pkg"></project>
-  <project path="packages/lsb-release-blend" name="blend-os/lsb-release-blend"></project>
-  <project path="packages/plymouth" name="blend-os/plymouth-pkg"></project>
-  <project path="packages/waydroid-blend" name="blend-os/waydroid-blend-pkg"></project>
-  <project path="packages/zsync2" name="blend-os/zsync2-pkg"></project>
+  <project path="packages/blend-inst" name="blend-os/blend-inst" revision="main" ></project>
+  <project path="packages/blend-keyring" name="blend-os/blend-keyring-pkg" revision="main" ></project>
+  <project path="packages/filesystem-blend" name="blend-os/filesystem-blend" revision="main" ></project>
+  <project path="packages/grub-blend" name="blend-os/grub-blend-pkg" revision="main" ></project>
+  <project path="packages/lsb-release-blend" name="blend-os/lsb-release-blend" revision="main" ></project>
+  <project path="packages/plymouth" name="blend-os/plymouth-pkg" revision="main" ></project>
+  <project path="packages/waydroid-blend" name="blend-os/waydroid-blend-pkg" revision="main" ></project>
+  <project path="packages/zsync2" name="blend-os/zsync2-pkg" revision="main" ></project>
 
   <!-- AUR packages -->
   <project path="packages/adw-gtk3" name="adw-gtk3" remote="aur"></project>
