@@ -22,6 +22,10 @@
   <!-- Build tools -->
   <project path="build" name="blendos_build" remote="blend-os" revision="main"  ></project>
 
+  <project path="assemble_package" name="assemble" remote="blend-os" revision="main" >
+    <copyfile src="assemble" dest="assemble" />
+  </project>
+
   <!-- Projects and their packaging -->
   <project path="projects/akshara" name="akshara" remote="blend-os" revision="main" ></project>
   <project path="packages/akshara" name="akshara-pkg" remote="blend-os" revision="main" ></project>
